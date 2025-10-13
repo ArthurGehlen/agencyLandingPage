@@ -1,0 +1,94 @@
+.header_wrapper {
+  max-width: 100vw;
+  height: 100vh;
+  background-image: url(../images/desktop/image-header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header_wrapper header {
+  padding: 2rem 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_wrapper header img {
+  height: 100%;
+}
+
+.header_wrapper .header_menu,
+.header_wrapper .header_menu ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header_wrapper .header_menu ul li {
+  font-family: "Barlow", sans-serif;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.contact_btn {
+  font-family: "Fraunces", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: hsl(212, 27%, 19%);
+  transition: .4s ease background-color, color;
+}
+
+.contact_btn:hover {
+    background-color: hsla(0, 0%, 100%, .4);
+    color: hsl(0, 0%, 100%);
+}
+
+.slogan_wrapper {
+  width: fit-content;
+  margin: 8rem auto;
+  text-align: center;
+}
+
+.slogan_wrapper h1 {
+  font-family: "Fraunces", sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-size: clamp(2.5rem, 4.4321vw + 0.1759rem, 3.5rem);
+  letter-spacing: 0.4rem;
+}
+
+.slogan_wrapper img {
+  margin-top: 10rem;
+}
+
+#menu_btn {
+  background: transparent;
+  border: none;
+  display: none;
+}
+
+@media screen and (max-width: 626px) {
+  .header_wrapper {
+    background-image: url(../images/mobile/image-header.jpg);
+  }
+
+  .slogan_wrapper {
+    margin: 4rem auto;
+  }
+
+  .slogan_wrapper img {
+    margin-top: 2rem;
+  }
+
+  .header_menu {
+    display: none !important;
+  }
+
+  #menu_btn {
+    display: block;
+  }
+}
