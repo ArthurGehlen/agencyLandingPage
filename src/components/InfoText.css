@@ -1,0 +1,79 @@
+.info_text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.5rem;
+  flex: 1 1 15rem;
+  padding: 2.8rem;
+}
+
+.info_text h2,
+.info_text p,
+.info_text .btn_container {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.info_text h2 {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+  text-align: start;
+  font-size: clamp(2.6rem, 3.1025vw + 1.0731rem, 3.4rem);
+  width: 35rem;
+}
+
+.info_text p {
+  font-family: "Barlow", sans-serif;
+  width: 35rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  color: hsl(213, 9%, 39%);
+}
+
+.btn_container {
+  width: 35rem;
+}
+
+.info_text button {
+  background-color: transparent;
+  border: none;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  position: relative;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0.4rem;
+}
+
+.info_text button::before {
+  content: "";
+  position: absolute;
+  bottom: 0.2rem;
+  left: 0;
+  width: 100%;
+  height: 0.6rem;
+  opacity: 0.35;
+  z-index: -1;
+  border-radius: 2rem;
+  transition: 0.4s ease opacity;
+}
+
+.info_text button:hover::before {
+  opacity: 1;
+}
+
+.info_text .yellow::before {
+  background-color: hsl(51, 100%, 49%);
+}
+
+.info_text .red::before {
+  background-color: hsl(7, 99%, 70%);
+}
+
+@media screen and (max-width: 626px) {
+  .info_text h2, .info_text p, .btn_container {
+    text-align: center;
+  }
+}
