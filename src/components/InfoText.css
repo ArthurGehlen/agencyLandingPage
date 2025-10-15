@@ -15,24 +15,24 @@
   max-width: 100%;
 }
 
+.info_text h2,
+.info_text p,
+.btn_container {
+  width: 35rem;
+}
+
 .info_text h2 {
   font-family: "Fraunces", sans-serif;
   font-weight: 900;
   text-align: start;
   font-size: clamp(2.6rem, 3.1025vw + 1.0731rem, 3.4rem);
-  width: 35rem;
 }
 
 .info_text p {
   font-family: "Barlow", sans-serif;
-  width: 35rem;
   line-height: 2rem;
   font-size: 1.2rem;
   color: hsl(213, 9%, 39%);
-}
-
-.btn_container {
-  width: 35rem;
 }
 
 .info_text button {
@@ -73,7 +73,9 @@
 }
 
 @media screen and (max-width: 626px) {
-  .info_text h2, .info_text p, .btn_container {
+  .info_text h2,
+  .info_text p,
+  .btn_container {
     text-align: center;
   }
 }

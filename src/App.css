@@ -1,13 +1,20 @@
 body {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .info_wrapper {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
 }
 
 .info_wrapper img {
-    max-width: 100%;
-    flex: 1 1 15rem;
+  max-width: 100%;
+  flex: 1 1 15rem;
+}
+
+.service_info_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
