@@ -18,3 +18,25 @@ body {
   flex-wrap: wrap;
   width: 100%;
 }
+
+.testimonials_wrapper {
+  margin: 6rem auto;
+  width: fit-content;
+  text-align: center;
+}
+
+.testimonials_wrapper h2 {
+  text-transform: uppercase;
+  font-family: 'Fraunces', sans-serif;
+  color: hsl(210, 4%, 67%);
+  letter-spacing: .35rem;
+  font-size: 1.2rem;
+}
+
+.testimonials {
+  margin-top: 2rem;
+  display: flex;  
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}

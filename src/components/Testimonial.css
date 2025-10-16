@@ -1,0 +1,30 @@
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;   
+    height: 20rem;
+    width: 25rem; 
+    padding: 2rem;
+}
+
+.testimonial img {
+    border-radius: 50%;
+    max-width: 20%;
+}
+
+.text {
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    line-height: 1.8rem;
+    color: hsl(213, 9%, 39%);
+}
+
+.testimonial .user_info h3 {
+    font-family: 'Fraunces', sans-serif;
+}
+
+.testimonial .user_info p {
+    color: hsl(232, 10%, 55%);
+    margin-top: 1rem;
+}

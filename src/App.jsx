@@ -5,10 +5,15 @@ import "./App.css";
 import Header from "./components/Header";
 import InfoText from "./components/InfoText";
 import ServiceInfo from "./components/ServiceInfo";
+import Testimonial from "./components/Testimonial";
 
 // Images
 import image_transform from "./images/desktop/image-transform.jpg";
 import image_stand_out from "./images/desktop/image-stand-out.jpg";
+// Images - Clients
+import image_emily from "./images/image-emily.jpg";
+import image_jennie from "./images/image-jennie.jpg";
+import image_thomas from "./images/image-thomas.jpg";
 
 function App() {
   return (
@@ -22,7 +27,7 @@ function App() {
           btn_color="yellow"
         />
       </div>
-      <div className="info_wrapper" style={{flexDirection: "row"}}>
+      <div className="info_wrapper" style={{ flexDirection: "row" }}>
         <img src={image_stand_out} alt="Stand Out" />
         <InfoText
           title="Stand out to the right audience"
@@ -43,6 +48,29 @@ function App() {
           text="Increase your credibility by getting the most stunning, high-quality photos that improve your business image."
           bg_color="blue"
         />
+      </div>
+      <div className="testimonials_wrapper">
+        <h2>Client Testimonials</h2>
+        <div className="testimonials">
+          <Testimonial
+            avatar={image_emily}
+            text="We put our trus in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit."
+            user_name="Emily R."
+            role="Marketing Director"
+          />
+          <Testimonial
+            avatar={image_thomas}
+            text="Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience."
+            user_name="Thomas S."
+            role="Chief Operating Officer"
+          />
+          <Testimonial
+            avatar={image_jennie}
+            text="Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!"
+            user_name="Jennie F."
+            role="Business Owner"
+          />
+        </div>
       </div>
     </>
   );
