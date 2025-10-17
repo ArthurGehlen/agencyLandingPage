@@ -40,12 +40,12 @@
   font-weight: 700;
   text-transform: uppercase;
   color: hsl(212, 27%, 19%);
-  transition: .4s ease background-color, color;
+  transition: 0.4s ease background-color, color;
 }
 
 .contact_btn:hover {
-    background-color: hsla(0, 0%, 100%, .4);
-    color: hsl(0, 0%, 100%);
+  background-color: hsla(0, 0%, 100%, 0.4);
+  color: hsl(0, 0%, 100%);
 }
 
 .slogan_wrapper {

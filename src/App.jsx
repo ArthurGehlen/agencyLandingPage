@@ -10,10 +10,16 @@ import Testimonial from "./components/Testimonial";
 // Images
 import image_transform from "./images/desktop/image-transform.jpg";
 import image_stand_out from "./images/desktop/image-stand-out.jpg";
+import { footer_logo } from "./components/FooterLogo";
 // Images - Clients
 import image_emily from "./images/image-emily.jpg";
 import image_jennie from "./images/image-jennie.jpg";
 import image_thomas from "./images/image-thomas.jpg";
+// Images - Socials
+import facebook from "./images/icon-facebook.svg";
+import instagram from "./images/icon-instagram.svg";
+import twitter from "./images/icon-twitter.svg";
+import pinterest from "./images/icon-pinterest.svg";
 
 function App() {
   return (
@@ -72,6 +78,26 @@ function App() {
           />
         </div>
       </div>
+      <div className="image_shown">
+        <div className="image milkbottle"></div>
+        <div className="image orange"></div>
+        <div className="image cone"></div>
+        <div className="image sugarcubes"></div>
+      </div>
+      <footer>
+        <div className="footer_logo">{footer_logo}</div>
+        <ul className="footer_links">
+          <li>About</li>
+          <li>Services</li>
+          <li>Projects</li>
+        </ul>
+        <div className="social_links">
+          <img src={facebook} alt="Facebook icon" />
+          <img src={instagram} alt="Instagram icon" />
+          <img src={twitter} alt="Twitter icon" />
+          <img src={pinterest} alt="Pinterest icon" />
+        </div>
+      </footer>
     </>
   );
 }

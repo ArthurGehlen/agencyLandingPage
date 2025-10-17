@@ -23,20 +23,109 @@ body {
   margin: 6rem auto;
   width: fit-content;
   text-align: center;
+  max-width: 100vw;
 }
 
 .testimonials_wrapper h2 {
   text-transform: uppercase;
-  font-family: 'Fraunces', sans-serif;
+  font-family: "Fraunces", sans-serif;
   color: hsl(210, 4%, 67%);
-  letter-spacing: .35rem;
+  letter-spacing: 0.35rem;
   font-size: 1.2rem;
 }
 
 .testimonials {
   margin-top: 2rem;
-  display: flex;  
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 4rem;
+}
+
+.image_shown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 100vw;
+}
+
+.image {
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .image_shown {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.milkbottle {
+  background-image: url(./images/desktop/image-gallery-milkbottles.jpg);
+}
+
+.orange {
+  background-image: url(./images/desktop/image-gallery-orange.jpg);
+}
+
+.cone {
+  background-image: url(./images/desktop/image-gallery-cone.jpg);
+}
+
+.sugarcubes {
+  background-image: url(./images/desktop/image-gallery-sugarcubes.jpg);
+}
+
+@media screen and (max-width: 626px) {
+  .milkbottle {
+    background-image: url(./images/mobile/image-gallery-milkbottles.jpg);
+  }
+
+  .orange {
+    background-image: url(./images/mobile/image-gallery-orange.jpg);
+  }
+
+  .cone {
+    background-image: url(./images/mobile/image-gallery-cone.jpg);
+  }
+
+  .sugarcubes {
+    background-image: url(./images/mobile/image-gallery-sugar-cubes.jpg);
+  }
+}
+
+footer {
+  padding: 2rem 4rem;
+  background-color: hsl(167, 34%, 41%);
+  max-width: 100vw;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+}
+
+footer .footer_links {
+  display: flex;
+  gap: 2.75rem;
+  font-family: "Barlow", sans-serif;
+  color: hsl(167, 40%, 24%);
+  transition: .4 ease color;
+}
+
+footer .footer_links li:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+footer .social_links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+footer .social_links img:hover > svg {
+  fill: hsl(0, 0%, 100%);
 }
