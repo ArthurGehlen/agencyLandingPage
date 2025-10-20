@@ -16,10 +16,7 @@ import image_emily from "./images/image-emily.jpg";
 import image_jennie from "./images/image-jennie.jpg";
 import image_thomas from "./images/image-thomas.jpg";
 // Images - Socials
-import facebook from "./images/icon-facebook.svg";
-import instagram from "./images/icon-instagram.svg";
-import twitter from "./images/icon-twitter.svg";
-import pinterest from "./images/icon-pinterest.svg";
+import social_svgs from "./utils/svgs.jsx";
 
 function App() {
   return (
@@ -92,10 +89,10 @@ function App() {
           <li>Projects</li>
         </ul>
         <div className="social_links">
-          <img src={facebook} alt="Facebook icon" />
-          <img src={instagram} alt="Instagram icon" />
-          <img src={twitter} alt="Twitter icon" />
-          <img src={pinterest} alt="Pinterest icon" />
+          {social_svgs.facebook}
+          {social_svgs.instagram}
+          {social_svgs.twitter}
+          {social_svgs.pinterest}
         </div>
       </footer>
     </>

@@ -1,12 +1,18 @@
 // Utils
 import "./Header.css";
+import { useState } from "react";
 
 // Images
 import logo from "../images/logo.svg";
 import arrow_down from "../images/icon-arrow-down.svg";
 import menu_icon from "../images/icon-hamburger.svg";
 
+// Components
+import HeaderMenu from "./HeaderMenu";
+
 function Header() {
+  const [isMenuActive, setIsMenuActive] = useState(false);
+
   return (
     <div className="header_wrapper">
       <header>
@@ -21,10 +27,12 @@ function Header() {
           <button className="contact_btn">Contact</button>
         </div>
 
-        <button id="menu_btn">
-            <img src={menu_icon} alt="Menu" />
+        <button id="menu_btn" onClick={() => setIsMenuActive(!isMenuActive)}>
+          <img src={menu_icon} alt="Menu" />
         </button>
       </header>
+
+      <HeaderMenu isActive={isMenuActive} />
 
       <div className="slogan_wrapper">
         <h1>WE ARE CREATIVES</h1>

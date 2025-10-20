@@ -1,0 +1,43 @@
+#menu {
+  margin: 2rem auto;
+  height: 20rem;
+  width: calc(100vw - calc(var(--header_pad_x) * 2));
+  background-color: hsl(0, 0%, 100%);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu_links li {
+  color: hsl(232, 10%, 55%);
+  font-family: "Barlow", sans-serif;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.menu_links li:not(:first-child) {
+  margin-top: 3rem;
+}
+
+#menu .contact_btn {
+  background-color: hsl(51, 100%, 49%);
+  color: hsl(0, 0%, 0%);
+  font-size: 1rem;
+}
+
+#menu::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-right: 0 solid transparent;
+  border-left: 2.25rem solid transparent;
+  border-bottom: 2.25rem solid hsl(0, 0%, 100%);
+  position: absolute;
+  top: -2.25rem;
+  right: 0;
+}

@@ -1,7 +1,3 @@
-body {
-  min-height: 100vh;
-}
-
 .info_wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -107,12 +103,12 @@ footer {
   gap: 3.5rem;
 }
 
-footer .footer_links {
+.footer_links {
   display: flex;
   gap: 2.75rem;
   font-family: "Barlow", sans-serif;
   color: hsl(167, 40%, 24%);
-  transition: .4 ease color;
+  transition: 0.4 ease color;
 }
 
 footer .footer_links li:hover {
@@ -126,6 +122,12 @@ footer .social_links {
   margin-top: 2rem;
 }
 
-footer .social_links img:hover > svg {
+.social_links svg {
+  fill: #2c7566;
+  transition: 0.4s ease fill;
+}
+
+footer .social_links svg:hover {
   fill: hsl(0, 0%, 100%);
+  cursor: pointer;
 }
